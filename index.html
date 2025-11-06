@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Gems - Handcrafted Jewellery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">💍 Stellar Gems</div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="About.html">About Us</a>
+            <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <h1>Timeless Elegance. Crafted for You.</h1>
+            <p>Explore our exclusive new collection of radiant gold and diamond pieces.</p>
+            <a href="product.html" class="btn primary-btn">Shop The Collection</a>
+        </section>
+        <h2>Featured Pieces</h2>
+        <section class="product-grid">
+            <div class="product-card">
+                <a href="product.html">
+                    <img src="ring.png" alt="Diamond Solitaire Ring">
+                    <h3>Radiant Solitaire Ring</h3>
+                    <p class="price">$1,299.00</p>
+                </a>
+                <button type="button" 
+                    class="btn secondary-btn "
+                    onclick="addToCartQuick('RNG001', 'Radiant Solitaire Ring', 1299.00)">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <a href="product.html">
+                    <img src="necklace.png" alt="Emerald Pendant Necklace">
+                    <h3>Emerald Drop Necklace</h3>
+                    <p class="price">$850.00</p>
+                </a>
+                <button type="button" 
+                    class="btn secondary-btn add-to-cart-quick"
+                    onclick="addToCartQuick('NCL002', 'Emerald Drop Necklac', 850.00)">
+                    Add To Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <a href="product.html">
+                    <img src="Earring.png" alt="Sapphire Stud Earrings">
+                    <h3>Sapphire Stud Earrings</h3>
+                    <p class="price">$450.00</p>
+                </a>
+                <button type="button" 
+                    class="btn secondary-btn add-to-cart-quick"
+                    onclick="addToCartQuick('EAR003', 'Sapphire Stud Earrings', 450.00)">
+                    Add To Cart
+                </button>
+            </div>
+            
+        
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Stellar Gems. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/">Instagram</a> | <a href="https://www.facebook.com/">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>

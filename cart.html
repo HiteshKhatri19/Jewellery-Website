@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart - Stellar Gems</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="logo">💍 Stellar Gems</div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About Us</a>
+            <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main class="cart-page-container">
+        <h1>Shopping Cart</h1>
+        
+        <div id="empty-cart-message">
+            Your cart is currently empty. <a href="product.html">Explore our collection!</a>
+        </div>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-table-body">
+                </tbody>
+        </table>
+        
+        <div class="cart-totals">
+            <div class="totals-box">
+                <h2>Cart Summary</h2>
+                
+                <p>Subtotal: <span id="cart-subtotal">$0.00</span></p>
+                <p>Shipping: <span>FREE</span></p>
+                
+                <p class="grand-total">Order Total: <span id="cart-grand-total">$0.00</span></p>
+                
+                <div class="checkout-actions">
+                    <button class="btn primary-btn" onclick="simulateCheckoutAndClear()">Proceed to Checkout</button>
+                    <button class="btn secondary-btn" onclick="clearCart()">Empty Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Stellar Gems. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/">Instagram</a> | <a href="https://www.facebook.com/">Facebook</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+    <script>
+        function simulateCheckoutAndClear() {
+            if (confirm("Simulate successful payment and clear cart?")) {
+                clearCart();
+                alert("Thank you! Your order has been placed successfully.");
+                // Redirect to homepage after successful order
+                window.location.href = 'index.html'; 
+            }
+        }
+    </script>
+</body>
+</html>

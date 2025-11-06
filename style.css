@@ -1,0 +1,301 @@
+/* --- Global Reset & Typography --- */
+body {
+    font-family: 'Georgia', serif; /* Elegant font for luxury */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background */
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Palatino', serif;
+    color: #0d1a26; /* Dark navy/charcoal for sophistication */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: #0d1a26; /* Dark header bar */
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.main-nav a {
+    margin-left: 25px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #f0e68c; /* Light gold hover effect */
+}
+
+.cart-icon {
+    font-weight: bold;
+}
+
+/* --- Buttons --- */
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.primary-btn {
+    background-color: #a87e40; /* Gold/Bronze tone */
+    color: white;
+    border: 1px solid #a87e40;
+}
+
+.primary-btn:hover {
+    background-color: #8c6a37;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #a87e40;
+    border: 1px solid #a87e40;
+}
+
+.secondary-btn:hover {
+    background-color: #a87e40;
+    color: white;
+}
+
+/* --- Hero Banner --- */
+.hero-banner {
+    background: url('herobanner.png') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+}
+
+.hero-banner h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* --- Product Grid --- */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 5%;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.product-card .price {
+    font-size: 1.1em;
+    color: #a87e40;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #0d1a26;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9em;
+}
+
+.main-footer a {
+    color: #ccc;
+    margin: 0 10px;
+}
+
+.main-footer a:hover {
+    color: #f0e68c;
+}
+/* --- ABOUT PAGE STYLING --- */
+
+.about-page {
+    padding: 0 5%;
+    max-width: 1200px; /* Limits width for readability */
+    margin: 0 auto;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+.about-hero h1 {
+    font-size: 2.5em;
+    color: #0d1a26;
+}
+
+.about-content-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.mission-statement, .founder-message {
+    flex: 1 1 45%; /* Allows these sections to take roughly half the width */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.core-values {
+    flex-basis: 100%; /* Forces this section to take full width */
+    padding: 20px;
+}
+
+.founder-message {
+    text-align: center;
+}
+
+.founder-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the image circular */
+    margin: 15px 0;
+    border: 3px solid #a87e40; /* Subtle gold border */
+}
+
+.core-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.core-values li {
+    background: url('gold-dot.png') no-repeat left 8px; /* Use a custom image/icon here */
+    padding: 5px 0 5px 25px;
+}
+
+ /* Specific styling needed for the Cart page elements */
+        .cart-page-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .cart-table th, .cart-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-table th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #0d1a26;
+        }
+
+        .remove-btn {
+            background: none;
+            border: none;
+            color: #cc0000;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        #empty-cart-message {
+            text-align: center;
+            padding: 50px;
+            border: 1px dashed #a87e40;
+            margin-bottom: 40px;
+            background-color: #fffaf0;
+            display: none; /* Hidden by default, JS will show it */
+        }
+        
+        .cart-totals {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+        }
+
+        .totals-box {
+            width: 100%;
+            max-width: 350px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .totals-box p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .totals-box .grand-total {
+            border-top: 2px solid #0d1a26;
+            padding-top: 10px;
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #a87e40;
+        }
+
+        .checkout-actions {
+            text-align: right;
+        }
